@@ -1,9 +1,14 @@
-# ft_bt_remote_server
+# fischertechnik BT Control Set server - ft_bt_remote_server
 
-This tool implements a bluetooth le gatt server for the fischertechnik
-TXT. It listens for incoming requests from the remote controller of
-the fischertechnik BT Control Set and allows to use the remote
-controller with the TXT.
+The fischertechnik BT Remote Server allows to use the remote control
+unit (sender) of the fischertechnik BT Control Set to be used on a Linux
+host like the fischertechnik TXT controller or the Raspberry Pi.
+
+[Video](https://www.youtube.com/watch?v=5oSWWJYuSTQ)
+
+This tool implements a bluetooth le gatt server. It listens for
+incoming requests from the remote controller and presents it to the
+underlying Linux system.
 
 The server creates a linux joystick input device and is compatible
 with most linux applications that deal with joysticks. Due to the lack
